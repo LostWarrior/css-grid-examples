@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Grid Example 5 Mondarin With Colors </title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		html {
+		    font-family: 'Futura W01', helvetica, san-serif;
+		    line-height: 1.3;
+		    font-size: 100%;
+		    color: #3C3C3B;
+		    font-weight: 300;
+		    background: white;
+		}
+		ul li{
+			margin: 0;
+			padding: 0;
+			list-style: none;			
+		}
+		.B{
+			margin: -8px -8px -8px -10px;
+			/*overflow: hidden;*/
+		}
+
+		.B ul{
+			display: grid;
+			grid-template-columns: repeat(5, 1fr) 1.2fr 1.2fr 0.5fr;
+			grid-template-rows: 11vw repeat(5, 13vw) 11vw 6.5vw 6.5vw;	
+    		background: #1C1B1B;
+    		-webkit-clip-path: polygon(10px 6px, calc(100% - 7px) 6px, calc(100% - 7px) calc(100% - 6px), 10px calc(100% - 6px));
+    		clip-path: polygon(10px 6px, calc(100% - 7px) 6px, calc(100% - 7px) calc(100% - 6px), 10px calc(100% - 6px));					
+		}
+		.B li{
+			border: 6px solid black;
+		}	
+
+		/* Li specific styles */
+
+		.block-sizes li:nth-child(1){
+			grid-column: span 2;
+		}
+		.block-sizes li:nth-child(2){
+			grid-column: span 3;
+		}
+		.block-sizes li:nth-child(3){
+			grid-column: span 2;
+		}
+		.block-sizes li:nth-child(4){
+			grid-row: span 6;
+		}
+		.block-sizes li:nth-child(5){
+    		grid-row: span 2;
+		}
+		.block-sizes li:nth-child(6){
+			grid-column: span 4;
+			grid-row: span 4;
+		}
+		.block-sizes li:nth-child(7){
+			grid-row: span 2;
+			grid-column: span 2;
+		}
+		.block-sizes li:nth-child(8){
+		    grid-row: span 3;
+		}
+		.block-sizes li:nth-child(9){
+    		grid-row: span 2;
+		}
+		.block-sizes li:nth-child(10){
+			grid-row: span 2;
+		}
+		.block-sizes li:nth-child(11){
+		    grid-row: span 2;
+		    grid-column: span 2;
+		}
+		.block-sizes li:nth-child(12){
+			grid-column: span 2;
+		}
+		.block-sizes li:nth-child(13){
+			grid-column: span 2;
+		}
+		.block-sizes li:nth-child(14){
+			grid-row: span 3;
+		}
+		.block-sizes li:nth-child(15){
+			grid-column: span 2;
+		}
+		.block-sizes li:nth-child(16){
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		.block-sizes li:nth-child(17){
+			grid-row: span 3;
+		}
+		.block-sizes li:nth-child(18){
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+		.block-sizes li:nth-child(19){
+			grid-column: span 2;
+		}
+		.block-sizes li:nth-child(20){
+			grid-column: span 4;
+		}
+
+		/* Color specific styles */
+
+		.white{
+			background-color: #fff;
+		}
+		.yellow{
+			background-color: yellow;
+		}	
+		.red{
+			background-color: red;
+		}
+		.black{
+			background-color: black;
+		}
+		.blue{
+			background-color: blue;
+		}																
+	</style>
+</head>
+<body class="B block-sizes">
+	<main>
+		<ul>
+			<li class="white"></li>
+			<li class="white"></li>
+			<li class="yellow"></li>
+			<li class="white"></li>
+			<li class="white"></li>
+			<li class="red"></li>
+			<li class="yellow"></li>
+			<li class="white"></li>
+			<li class="white"></li>
+			<li class="white"></li>
+			<li class="black"></li>
+			<li class="white"></li>
+			<li class="white"></li>
+			<li class="yellow"></li>
+			<li class="white"></li>
+			<li class="blue"></li>
+			<li class="red"></li>
+			<li class="white"></li>
+			<li class="black"></li>
+			<li class="white"></li>
+		</ul>
+	</main>
+</body>
+</html>

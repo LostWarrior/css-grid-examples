@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid example 2</title>
+	<style type="text/css"> 
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background: #f3f3f3;
+			margin: 0;
+		}
+		main{
+			display: grid;
+			grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+			grid-gap: 1rem;
+			font-size: 80%;
+		}
+		article{
+			display: flex;
+			flex-flow: column;
+			padding: 2rem;
+			border: 1px solid black;
+			border-radius: 1rem;	
+			margin: 0;	  
+		}
+		img{
+			order: -1;
+			align-self: center;
+			width: 100%;
+		}
+
+		article > h1{
+			margin: 1rem 1rem 0;
+		}
+
+		article > p{
+			margin: 0.25em 1rem 1rem;
+		}
+
+		article > button{
+			margin-top: auto;
+			background: teal;
+			color: white;
+			padding: 0.5rem;
+			border: none;
+			border-radius: 1rem;
+			font-size: 1.2rem;
+			cursor: pointer;			
+		}
+    </style>
+</head>
+<body>
+
+	<main class="main"> 
+		<article class="item">
+			<h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>This is description Lorem Ipsum Dolor Sit Amet</p> 	
+			<button>Buy Me</button>		
+		</article>
+		<article class="item">
+			<h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>This is description</p>
+			<ul>
+				<li>Description 1</li>
+				<li>Description 2</li>
+				<li>Description 3</li>
+			</ul> 
+			<button>Buy Me</button>					
+		</article>
+		<article class="item">
+			<h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p> 	
+			<button>Buy Me</button>				
+		</article>
+		<article class="item">
+			<h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>This is descriptionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> 	
+			<button>Buy Me</button>				
+		</article>
+	</main>
+</body>
+</html>

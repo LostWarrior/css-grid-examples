@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid example 2</title>
+	<style type="text/css"> 
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background: #f6f6f6;
+			margin: 0;
+		}	
+	  ul{
+	  	display: grid;
+	  	grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+	  	grid-gap: 0.5rem 1rem;
+	  }
+	  li{
+	  	display: flex;
+	  	flex-flow: column;
+	  }
+	  img{
+	  	order: -1;
+	  	width: 100%;
+	  	display: block;
+	  }
+    </style>
+</head>
+<body>
+
+	<ul>
+		<li>			
+			<h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>This is description</p> 
+		</li>
+		<li>
+			<h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>This is description</p>
+		</li>
+		<li> 
+			<h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>This is description</p>
+		</li>
+		<li> 
+			<h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>This is description</p>
+		</li>
+		<li> 
+		    <h1>Header</h1>
+			<img src="assets/images/sample1.jpg">
+			<p>This is description</p>
+		</li>
+	</ul>
+
+</body>
+</html>

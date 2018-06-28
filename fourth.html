@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		
+	<title>CSS Grid Example 4</title>
+
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+
+		.grid{
+			display: grid;
+			/* other options:
+				1) As many columns of 150px as there are
+					grid-template-columns: repeat(auto-fill,150px);
+				2) Flexible tracks:
+					grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+					creates tracks at the end, so we end up with whitespace at the end
+					if there are no more divs to take leftover space.
+				3) Fit:
+					grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+					If there are any empty tracks, will collapse them 
+			*/
+			grid-template-columns: repeat(3,1fr);
+			grid-gap: 20px;
+		}
+
+		.grid div{
+			border: 1px solid rgb(0,95,107);
+			border-radius: 3px;
+			padding: 0.2em;
+			background-color: rgba(0,95,107,0.8);
+			color: #fff;
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="grid">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+	</div>
+
+</body>
+</html>
